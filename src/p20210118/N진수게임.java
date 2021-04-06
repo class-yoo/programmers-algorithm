@@ -5,7 +5,7 @@ public class N진수게임 {
 	char[] numeralSystemArr = new char[16];
 
 	public String solution(int n, int t, int m, int p) {
-		
+
 		int number = 0;
 		int index = p - 1;
 
@@ -19,7 +19,7 @@ public class N진수게임 {
 
 		StringBuilder sb = new StringBuilder("0");
 		StringBuilder answer = new StringBuilder();
-		
+
 		while (answer.length() != t) {
 			int tempNumber = number++;
 			StringBuilder sb2 = new StringBuilder();
@@ -30,7 +30,7 @@ public class N진수게임 {
 			}
 
 			sb.append(sb2.reverse().toString());
-			
+
 			if (index < sb.length()) {
 				answer.append(sb.charAt(index));
 				index += m;
@@ -43,6 +43,6 @@ public class N진수게임 {
 	public static void main(String[] args) {
 		N진수게임 n진수게임 = new N진수게임();
 		String result = n진수게임.solution(16, 16, 2, 1);
-		System.out.println(result);	
+		System.out.println(result);
 	}
 }
