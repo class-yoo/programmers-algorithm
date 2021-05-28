@@ -1,4 +1,4 @@
-package p20210404;
+package p20210514;
 
 public class 입국심사2 {
     public long solution(int n, int[] times) {

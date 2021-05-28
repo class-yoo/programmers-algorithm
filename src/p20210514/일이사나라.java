@@ -1,7 +1,5 @@
-package p20210404;
+package p20210514;
 
-
-import java.util.Stack;
 
 class 일이사나라 {
     public String solution(int n) {
