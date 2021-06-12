@@ -23,6 +23,6 @@ public class 가장큰수 {
 
         String answer = String.join("", list);
 
-        return answer.startsWith("00") ? "0" : answer;
+        return answer.charAt(0) == '0' ? "0" : answer;
     }
 }
